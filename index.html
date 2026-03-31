@@ -467,83 +467,75 @@ h1,h2,h3{font-family:'DM Serif Display',serif;}
 <section class="section reveal" id="indicadores" style="background:linear-gradient(180deg,rgba(37,99,235,0.04) 0%,rgba(255,255,255,0) 100%);border-radius:40px;">
   <span class="section-tag tag-blue"><i class="fas fa-trophy"></i> Indicadores de Éxito</span>
   <h2 class="section-title"><i class="fas fa-trophy" style="font-size:0.7em;color:var(--azul);margin-right:10px;"></i>Lo que se mide, se mejora</h2>
-  <p class="section-desc">Los resultados esperados se miden a través de los mismos cinco procesos y tres ejes transversales de la sombrilla estructural. Base de datos centralizada, Metabase para visualización, reportes automatizados con IA, alertas por desviación de metas y comité interdepartamental para cruce de datos.</p>
+  <p class="section-desc">Los resultados esperados se miden a través de los mismos cinco procesos y tres ejes transversales de la sombrilla estructural. Base de datos centralizada, reportes automatizados con IA y comité interdepartamental para cruce de datos.</p>
 
   <h3 style="font-family:'Outfit',sans-serif;font-size:1.3rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--verde);">Resultados esperados por proceso</h3>
-  <div class="somb-grid">
-    <div class="somb-item" onclick="openModal(this)" style="cursor:pointer;text-align:left;">
-      <i class="fas fa-people-group" style="color:var(--verde);"></i>
-      <h4>Social</h4>
-      <p>Comunidades organizadas y atendidas</p>
-      <div class="dept-toggle" style="margin-top:0.5rem;"><span>Ver indicadores</span> <i class="fas fa-arrow-up-right-from-square" style="font-size:0.75rem;"></i></div>
-      <div class="dept-body"><div class="dept-detail">
-        <p class="detail-label green">Resultados esperados</p>
-        <p class="detail-text">Grupos de valor registrados y caracterizados en cada municipio del Valle. Porcentaje de necesidades identificadas que son efectivamente atendidas. Cobertura territorial activa medida por municipios con presencia del Departamento Social. Programas sociales en ejecución con beneficiarios cuantificados y seguimiento de impacto.</p>
-      </div></div>
+  <div class="ind-grid">
+    <div class="ind-card green">
+      <h4 style="color:var(--verde);"><i class="fas fa-people-group"></i> Social</h4>
+      <ul>
+        <li>Grupos de valor registrados y caracterizados por municipio</li>
+        <li>Necesidades identificadas vs. efectivamente atendidas</li>
+        <li>Cobertura territorial activa (municipios con presencia)</li>
+        <li>Programas sociales en ejecución con beneficiarios cuantificados</li>
+      </ul>
     </div>
-    <div class="somb-item" onclick="openModal(this)" style="cursor:pointer;text-align:left;">
-      <i class="fas fa-landmark" style="color:var(--azul);"></i>
-      <h4>Político</h4>
-      <p>Líderes formados y elecciones ganadas</p>
-      <div class="dept-toggle" style="margin-top:0.5rem;"><span>Ver indicadores</span> <i class="fas fa-arrow-up-right-from-square" style="font-size:0.75rem;"></i></div>
-      <div class="dept-body"><div class="dept-detail">
-        <p class="detail-label blue">Resultados esperados</p>
-        <p class="detail-text">Líderes registrados y activos por cada municipio del Valle. Porcentaje de líderes que completan la formación en la Escuela Política. Tasa de éxito electoral: candidatos avalados vs. candidatos efectivamente electos. Crecimiento medible del censo electoral del partido. Nuevos municipios y comunas del Valle donde el partido logra presencia por primera vez.</p>
-      </div></div>
+    <div class="ind-card blue">
+      <h4 style="color:var(--azul);"><i class="fas fa-landmark"></i> Político</h4>
+      <ul>
+        <li>Líderes registrados y activos por municipio</li>
+        <li>Porcentaje de formación completada en la Escuela</li>
+        <li>Tasa de éxito electoral (avalados vs. electos)</li>
+        <li>Crecimiento del censo electoral por periodo</li>
+        <li>Nuevos municipios con presencia del partido</li>
+      </ul>
     </div>
-    <div class="somb-item" onclick="openModal(this)" style="cursor:pointer;text-align:left;">
-      <i class="fas fa-building-columns" style="color:var(--naranja);"></i>
-      <h4>Administrativo</h4>
-      <p>Gobierno efectivo y soluciones reales</p>
-      <div class="dept-toggle" style="margin-top:0.5rem;"><span>Ver indicadores</span> <i class="fas fa-arrow-up-right-from-square" style="font-size:0.75rem;"></i></div>
-      <div class="dept-body"><div class="dept-detail">
-        <p class="detail-label orange">Resultados esperados</p>
-        <p class="detail-text">Electos del partido que cuentan con hoja de ruta programática asignada y en ejecución. Porcentaje de compromisos programáticos efectivamente implementados desde los cargos de gobierno. Necesidades de los grupos de valor que son atendidas directamente desde la gestión pública del partido en el Valle.</p>
-      </div></div>
+    <div class="ind-card orange">
+      <h4 style="color:var(--naranja);"><i class="fas fa-building-columns"></i> Administrativo</h4>
+      <ul>
+        <li>Electos con hoja de ruta programática en ejecución</li>
+        <li>Compromisos programáticos efectivamente implementados</li>
+        <li>Necesidades de grupos de valor atendidas desde el gobierno</li>
+      </ul>
     </div>
-    <div class="somb-item" onclick="openModal(this)" style="cursor:pointer;text-align:left;">
-      <i class="fas fa-chart-line" style="color:var(--rojo);"></i>
-      <h4>Expansión</h4>
-      <p>Crecimiento territorial sostenido</p>
-      <div class="dept-toggle" style="margin-top:0.5rem;"><span>Ver indicadores</span> <i class="fas fa-arrow-up-right-from-square" style="font-size:0.75rem;"></i></div>
-      <div class="dept-body"><div class="dept-detail">
-        <p class="detail-label" style="color:var(--rojo);">Resultados esperados</p>
-        <p class="detail-text">Número de municipios del Valle donde el partido tiene presencia activa vs. línea base inicial. Crecimiento porcentual del censo electoral por periodo. Nuevos cargos de elección popular obtenidos. Velocidad de entrada a nuevos territorios medida en municipios incorporados por trimestre.</p>
-      </div></div>
+    <div class="ind-card" style="border-top:3px solid var(--rojo);">
+      <h4 style="color:var(--rojo);"><i class="fas fa-chart-line"></i> Expansión</h4>
+      <ul>
+        <li>Municipios con presencia activa vs. línea base inicial</li>
+        <li>Crecimiento porcentual del censo por periodo</li>
+        <li>Nuevos cargos de elección popular obtenidos</li>
+        <li>Municipios incorporados por trimestre</li>
+      </ul>
     </div>
   </div>
 
   <h3 style="font-family:'Outfit',sans-serif;font-size:1.3rem;font-weight:700;margin:2.5rem 0 1rem;color:var(--azul);">Resultados de los ejes transversales</h3>
-  <div class="somb-grid" style="grid-template-columns:repeat(3,1fr);">
-    <div class="somb-item" onclick="openModal(this)" style="cursor:pointer;text-align:left;">
-      <i class="fas fa-bullhorn" style="color:var(--amarillo);"></i>
-      <h4>Comunicaciones</h4>
-      <p>Marca posicionada y mensaje unificado</p>
-      <div class="dept-toggle" style="margin-top:0.5rem;"><span>Ver indicadores</span> <i class="fas fa-arrow-up-right-from-square" style="font-size:0.75rem;"></i></div>
-      <div class="dept-body"><div class="dept-detail">
-        <p class="detail-label yellow">Resultados esperados</p>
-        <p class="detail-text">Crecimiento en redes sociales medido en seguidores, alcance e interacción. Apariciones del partido en medios de comunicación del Valle. Nivel de adopción de la nueva identidad visual por parte de los líderes territoriales. Efectividad de la comunicación interna medida en tasa de lectura y respuesta de los canales.</p>
-      </div></div>
+  <div class="ind-grid" style="grid-template-columns:repeat(3,1fr);">
+    <div class="ind-card yellow">
+      <h4 style="color:var(--amarillo);"><i class="fas fa-bullhorn"></i> Comunicaciones</h4>
+      <ul>
+        <li>Crecimiento en redes sociales (seguidores, alcance, interacción)</li>
+        <li>Apariciones en medios del Valle</li>
+        <li>Adopción de la nueva identidad visual</li>
+        <li>Efectividad de comunicación interna (lectura y respuesta)</li>
+      </ul>
     </div>
-    <div class="somb-item" onclick="openModal(this)" style="cursor:pointer;text-align:left;">
-      <i class="fas fa-cubes" style="color:#64748b;"></i>
-      <h4>Logístico</h4>
-      <p>Operación eficiente en el territorio</p>
-      <div class="dept-toggle" style="margin-top:0.5rem;"><span>Ver indicadores</span> <i class="fas fa-arrow-up-right-from-square" style="font-size:0.75rem;"></i></div>
-      <div class="dept-body"><div class="dept-detail">
-        <p class="detail-label" style="color:#64748b;">Resultados esperados</p>
-        <p class="detail-text">Eventos ejecutados exitosamente en el Valle (asambleas, capacitaciones, encuentros). Disponibilidad y uptime de las herramientas tecnológicas del partido. Cobertura de distribución de material a los municipios. Capacidad de respuesta operativa ante requerimientos de los departamentos medida en tiempo de atención.</p>
-      </div></div>
+    <div class="ind-card gray">
+      <h4 style="color:#64748b;"><i class="fas fa-cubes"></i> Logístico</h4>
+      <ul>
+        <li>Eventos ejecutados exitosamente en el Valle</li>
+        <li>Disponibilidad de herramientas tecnológicas</li>
+        <li>Cobertura de distribución de material</li>
+        <li>Capacidad de respuesta operativa</li>
+      </ul>
     </div>
-    <div class="somb-item" onclick="openModal(this)" style="cursor:pointer;text-align:left;">
-      <i class="fas fa-coins" style="color:var(--naranja);"></i>
-      <h4>Sostenibilidad</h4>
-      <p>Base financiera para crecer</p>
-      <div class="dept-toggle" style="margin-top:0.5rem;"><span>Ver indicadores</span> <i class="fas fa-arrow-up-right-from-square" style="font-size:0.75rem;"></i></div>
-      <div class="dept-body"><div class="dept-detail">
-        <p class="detail-label orange">Resultados esperados</p>
-        <p class="detail-text">Fortalecimiento de la capacidad financiera del partido a través de la participación en cargos de gobierno. Capacidad operativa sostenida para financiar la expansión territorial. Estabilidad de la estructura departamental medida en continuidad de los equipos y programas entre periodos electorales.</p>
-      </div></div>
+    <div class="ind-card orange">
+      <h4 style="color:var(--naranja);"><i class="fas fa-coins"></i> Sostenibilidad</h4>
+      <ul>
+        <li>Capacidad financiera desde cargos de gobierno</li>
+        <li>Operación sostenida para financiar expansión</li>
+        <li>Estabilidad de estructura entre periodos electorales</li>
+      </ul>
     </div>
   </div>
 
